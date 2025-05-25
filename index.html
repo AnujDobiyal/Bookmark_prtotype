@@ -29,7 +29,13 @@
         }
         .inputBox{
             display: flex;
+            align-items: center;
             justify-content: center;
+        }
+        @media only screen and (max-width: 600px) {
+            .inputBox {
+                flex-direction: column;   
+            }
         }
 
         .youtuber{
