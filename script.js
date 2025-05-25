@@ -20,6 +20,8 @@ function createCategory(categoryName){
     yt_link.className = "yt"
     yt_link.id = categoryName+"_ytlink"
 
+    let btn_box = document.createElement('div')
+
     yt_add = document.createElement('button')
     yt_add.innerHTML = "Add"
     let del = document.createElement('button')
@@ -27,8 +29,11 @@ function createCategory(categoryName){
 
     input_box.append(yt_name)
     input_box.append(yt_link)
-    input_box.append(yt_add)
-    input_box.append(del)
+
+    
+    btn_box.append(yt_add)
+    btn_box.append(del)
+    input_box.append(btn_box)
 
     div_box.append(input_box)
 
